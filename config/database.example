@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: rails
+  pool: 5
+
+development:
+  <<: *default
+  database: [ENV_NAME]_development
+
+test:
+  <<: *default
+  database: [ENV_NAME]_test<%= ENV["TEST_ENV_NUMBER"] %>
