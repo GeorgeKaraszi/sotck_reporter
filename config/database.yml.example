@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  database: [ENV_NAME]_development
+  database: stock_cmd_development
 
 test:
   <<: *default
-  database: [ENV_NAME]_test<%= ENV["TEST_ENV_NUMBER"] %>
+  database: stock_cmd_test<%= ENV["TEST_ENV_NUMBER"] %>
