@@ -11,7 +11,7 @@ gem 'rails', '~> 5.0.1'
 gem 'pg'
 
 gem 'sidekiq'
-
+gem 'rollbar'
 gem 'interactor-rails'
 gem 'money-rails'
 gem 'rails-timeago'
@@ -45,6 +45,11 @@ gem 'redis', '~> 3.0'
 # Environment Variables
 gem 'dotenv-deployment'
 gem 'dotenv-rails'
+
+group :development, :test, :staging do
+  gem 'faker'
+  gem 'factory_girl_rails'
+end
 
 group :development do
   gem 'listen', '~> 3.0.5'

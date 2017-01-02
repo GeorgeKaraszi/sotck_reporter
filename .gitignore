@@ -21,3 +21,7 @@
 .byebug_history
 
 database.yml
+
+# IDE stuff
+/.idea
+.DS_Store

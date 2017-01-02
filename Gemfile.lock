@@ -83,6 +83,13 @@ GEM
       mail (~> 2.6.3)
     erubis (2.7.0)
     factis (1.0.1)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.8.0)
+      factory_girl (~> 4.8.0)
+      railties (>= 3.0.0)
+    faker (1.7.1)
+      i18n (~> 0.5)
     ffi (1.9.14)
     formatador (0.2.5)
     fuubar (2.2.0)
@@ -157,6 +164,7 @@ GEM
       monetize (~> 1.4.0)
       money (~> 6.7)
       railties (>= 3.0)
+    multi_json (1.12.1)
     nenv (0.3.0)
     nio4r (1.2.1)
     nokogiri (1.7.0)
@@ -229,6 +237,8 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     redis (3.3.2)
+    rollbar (2.14.0)
+      multi_json
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -331,6 +341,8 @@ DEPENDENCIES
   dotenv-rails
   email_spec
   factis
+  factory_girl_rails
+  faker
   fuubar
   good_migrations
   guard-brakeman
@@ -354,6 +366,7 @@ DEPENDENCIES
   rails (~> 5.0.1)
   rails-timeago
   redis (~> 3.0)
+  rollbar
   rspec-instafail
   rspec-its
   rspec-rails
