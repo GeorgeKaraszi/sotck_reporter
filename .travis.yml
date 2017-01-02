@@ -6,7 +6,6 @@ before_script: bin/setup
 
 script:
   - bundle exec rspec spec/
-  - bundle exec rake assets:precompile
 
 after_script: codeclimate-test-reporter
 
