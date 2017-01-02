@@ -36,6 +36,7 @@ chdir APP_ROOT do
   # end
 
   copy_example("config/database.yml")
+  copy_example("config/cable.yml")
 
   copy_example(".env.development", source: ".env.example")
   copy_example(".env.test", source: ".env.example")
