@@ -10,7 +10,7 @@ require 'action_mailer/railtie'
 require 'action_view/railtie'
 require 'action_cable/engine'
 # require "sprockets/railtie"
-require 'rails/test_unit/railtie'
+# require 'rails/test_unit/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -21,6 +21,14 @@ module Skeleton
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.active_job.queue_adapter = :sidekiq
+    config.action_view.field_error_proc = proc do |html_tag, _instance|
+      html_tag
+    end
+
+    config.active_record.raise_in_transactional_callbacks = true
+
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.

@@ -26,3 +26,10 @@ cable.yml
 # IDE stuff
 /.idea
 .DS_Store
+
+## SimpleCov
+coverage/
+
+## Environment configs
+.env.development
+.env.test

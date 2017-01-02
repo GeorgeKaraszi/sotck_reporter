@@ -86,7 +86,6 @@ end
 group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'database_cleaner'
-  gem 'email_spec'
   gem 'factis'
   gem 'fuubar'
   gem 'poltergeist'
