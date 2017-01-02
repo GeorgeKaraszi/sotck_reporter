@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/GeorgeKaraszi/stock_reporter.svg?branch=master)](https://travis-ci.org/GeorgeKaraszi/stock_reporter)
 # README
 
 Web-URL: https://desolate-basin-77751.herokuapp.com/
