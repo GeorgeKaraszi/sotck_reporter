@@ -1,5 +1,6 @@
-# NOTE: THIS IS A Rails 5 API setup
 # README
+
+Web-URL: https://desolate-basin-77751.herokuapp.com/
 
 Rails Version:
 
@@ -9,28 +10,14 @@ Ruby Version:
 
 * 2.3.3 (soon to be 2.4 once Rails 5.1 comes)
 
-
-Project settings file:
-
-* Redo all `*.example` to `*.yml` files
-
-Environment Variables:
-
-* Rename `.env.example` to `.env.[ENV_NAME]`
-
 Database information:
 * Database used is Postgres 9.5.3
 
 
+## Deploying to Heroku (Manually)
 
-This has been pre-configured with RSPEC setup.
+* Download heroku cli tools.
+* Add git remote: `git remote add https://git.heroku.com/desolate-basin-77751.git`
+* run `git push heroku`
+* See changes by `heroku open`
 
-
-## Style guides
-
-Includes a pre-configured 
-* CSS Linter
-* JS Linter
-* RuboCop
-* CodeClimate
-* RVMC file
