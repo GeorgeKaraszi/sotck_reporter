@@ -1,0 +1,22 @@
+language: ruby
+rvm: "2.3.3"
+sudo: false
+
+before_script: bin/setup
+
+script:
+  - bundle exec rspec spec/
+  - bundle exec rake assets:precompile
+
+after_script: codeclimate-test-reporter
+
+
+cache:
+  - bundler
+
+addons:
+  postgresql: "9.4"
+
+services:
+  - redis-server
+
