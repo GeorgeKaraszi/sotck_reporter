@@ -1,24 +1,36 @@
+# NOTE: THIS IS A Rails 5 API setup
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails Version:
 
-Things you may want to cover:
+* 5.0.1 api
 
-* Ruby version
+Ruby Version:
 
-* System dependencies
+* 2.3.3 (soon to be 2.4 once Rails 5.1 comes)
 
-* Configuration
 
-* Database creation
+Project settings file:
 
-* Database initialization
+* Redo all `*.example` to `*.yml` files
 
-* How to run the test suite
+Environment Variables:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Rename `.env.example` to `.env.[ENV_NAME]`
 
-* Deployment instructions
+Database information:
+* Database used is Postgres 9.5.3
 
-* ...
+
+
+This has been pre-configured with RSPEC setup.
+
+
+## Style guides
+
+Includes a pre-configured 
+* CSS Linter
+* JS Linter
+* RuboCop
+* CodeClimate
+* RVMC file

@@ -21,6 +21,7 @@
 .byebug_history
 
 database.yml
+cable.yml
 
 # IDE stuff
 /.idea
